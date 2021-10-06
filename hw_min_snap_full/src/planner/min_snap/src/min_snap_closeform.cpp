@@ -133,19 +133,7 @@ namespace my_planner
             {
                 M_k(i,i)=fact(i);
             }
-            
-            for(int i=4;i<=n_order;i++)
-            {
-                for(int j=0;j<=n_order;j++)
-                {
-                    if(i-4<=j)
-                    {
-                        M_k(i,j)=fact(j)/fact(j-(i-4))*pow(ts(k),j-i+4);
-                        cout<<i<<","<<j<<":"<<fact(j)/fact(j-i+4)<<endl;
-                    }
-                }
-            }
-	    /*
+                                                                                                                       
             for (int i = 0; i <= n_order; i++)
             {
                 for (int j = 0; j <= 3; j++)
@@ -157,7 +145,7 @@ namespace my_planner
                     }
                 }
             }
-	    */
+	    
             M.block(k*(n_order+1),k*(n_order+1),n_order+1,n_order+1)=M_k;
         }
     }
