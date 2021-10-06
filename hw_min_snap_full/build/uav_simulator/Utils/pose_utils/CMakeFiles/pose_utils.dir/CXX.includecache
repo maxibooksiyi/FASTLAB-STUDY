@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/southriver/hw_min_snap_full/src/uav_simulator/Utils/pose_utils/include/pose_utils.h
+iostream
+-
+armadillo
+/home/southriver/hw_min_snap_full/src/uav_simulator/Utils/pose_utils/include/armadillo
+
+/home/southriver/hw_min_snap_full/src/uav_simulator/Utils/pose_utils/src/pose_utils.cpp
+pose_utils.h
+/home/southriver/hw_min_snap_full/src/uav_simulator/Utils/pose_utils/src/pose_utils.h
+

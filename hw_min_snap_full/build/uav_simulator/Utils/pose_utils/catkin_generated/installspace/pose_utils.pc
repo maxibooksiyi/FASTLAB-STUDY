@@ -1,0 +1,8 @@
+prefix=/home/southriver/hw_min_snap_full/install
+
+Name: pose_utils
+Description: Description of pose_utils
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib -lpose_utils
+Requires: 
